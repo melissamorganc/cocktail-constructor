@@ -5,13 +5,14 @@ import BrowseDrinks from './BrowseDrinks';
 
 function Navigation(props) {
     return (
-        <div>
+        <section>
+            
             <ul className={styles.navbar}>
                 <li><BrowseDrinks /></li>
                 <li>Favorite Cocktails</li>
                 <li>Ingredient List</li>    
             </ul>        
-    </div>
+        </section>
     );
 }
 
