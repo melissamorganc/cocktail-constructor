@@ -14,14 +14,15 @@ function BrowseDrinks(props) {
 
     function getDrinkData() {
         const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${strIngredient1}`
+        console.log("you have data");
         // Maybe I dont need to pull the ingredient specifically, simply add in what is sleected on the Drink Options page
     }
 
     return (
         <div>
-            Browse Drinks
             <DrinkOptions />
-            <DrinkDetails />
+            {/* <DrinkDetails /> */}
+            {/* Render list of drink results here */}
             
         </div>
     );

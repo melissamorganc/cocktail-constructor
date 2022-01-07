@@ -8,7 +8,8 @@ function Navigation(props) {
         <section>
             
             <ul className={styles.navbar}>
-                <li><BrowseDrinks /></li>
+                {/* Links to each of the options */}
+                <li>Browse Drinks</li>
                 <li>Favorite Cocktails</li>
                 <li>Ingredient List</li>    
             </ul>        

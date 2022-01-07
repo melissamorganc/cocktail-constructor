@@ -8,10 +8,11 @@ function DrinkDetails({drinks}) {
     const {idDrink} = useParams();
 
     useEffect(() => {
-        fetch(`www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
         .then((res) => res.json())
         .then((json) => {
-            setDrink(json);
+            setDrink(json.drinks[0]);
+			console.log(json)
         })
         .catch(console.error)
     }, []);
