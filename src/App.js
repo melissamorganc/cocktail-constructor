@@ -6,9 +6,8 @@ import DrinkOptions from './components/DrinkOptions';
 import DrinkDetails from './components/DrinkDetails';
 
 
-
 function App() {
-  return (
+	return (
 		<div className='App'>
 			<header className='title'>
 				<Link to='/home'>The Cocktail Constructor</Link>

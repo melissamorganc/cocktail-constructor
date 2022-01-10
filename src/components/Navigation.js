@@ -7,15 +7,15 @@ import { Link } from 'react-router-dom';
 function Navigation(props) {
     return (
         <section>
-            
-            <ul className={styles.navbar}>
-                {/* Links to each of the options */}
-                <Link to='/home'>Browse Drinks</Link>
-                <Link to='/favorite'>Favorite Drinks</Link>
-                <Link to='/list'>Ingredient List</Link>
-            </ul>        
+            <div className='drinkLinks'>
+                <Link to='/drinks/gin'>Gin</Link>
+                <Link to='/drinks/rum'>Rum</Link>
+                <Link to='/drinks/tequila'>Tequila</Link>
+                <Link to='/drinks/vodka'>Vodka</Link>
+                <Link to='/drinks/whiskey'>Whiskey</Link>
+            </div>
         </section>
-    );
+		);
 }
 
 export default Navigation;

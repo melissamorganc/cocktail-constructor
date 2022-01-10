@@ -3,60 +3,41 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
 function DrinkOptions(props) {
+	const { strIngredient1 } = useParams();
 
-    const { strIngredient1 } = useParams();
+	const [drinks, setDrinks] = useState([]);
+	const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${strIngredient1}`;
 
-    const [drinks, setDrinks] = useState([]);
-    const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${strIngredient1}`;
-
-    useEffect(() => {
-        fetch(url)
-            .then((res) => res.json())
+	useEffect(() => {
+		// debugger;
+		fetch(url)
+			.then((res) => res.json())
 			.then((json) => {
 				setDrinks(json.drinks);
 				console.log(json);
-            })
-					// .then((res) => res.text())
-					// // https://stackoverflow.com/questions/45696999/fetch-unexpected-end-of-input getting weird error message, this fixed it
-					// .then((data) => (data ? JSON.parse(data) : {}))
-					// .then((json) => {
-					//     setDrinks(json.drinks);
-					//     console.log(json);
-					// })
-            .catch(console.error);
-    }, []);
+			})
+			.catch(console.error);
+	}, [drinks]);
 
-    if (!drinks) {
-			return <p>Loading yummy drinks...</p>;
-    }
+	if (!drinks) {
+		return <p>Loading yummy drinks...</p>;
+	}
 
-    return (
-        <div>
-            <div className='drinkLinks'>
-                <Link to='/drinks/gin'>
-                    {/* <img src= alt="" /> */}
-                    Gin</Link>
-                <Link to='/drinks/rum'>Rum</Link>
-                <Link to='/drinks/tequila'>Tequila</Link>
-                <Link to='/drinks/vodka'>Vodka</Link>
-                <Link to='/drinks/whiskey'>Whiskey</Link>
-            </div>
-        <section className='drinksContainer'>
-            {drinks.map((drink) => (
-                <Link to={`/drinks/${drink.idDrink}`} key={drink.idDrink}>
-                    <div className='card'>
-                        <div className='cardImage'>
-                            <img src={drink.strDrinkThumb} alt={drink.strDrink} />
-                        </div>
-                        <div className='cardTitle'>
-                            <h3>{drink.strDrink}</h3>
-                        </div>
-                    </div>
-                </Link>
-            ))}
-        
-
-
+	return (
+		<div>
+			<section className='drinksContainer'>
+				{drinks.map((drink) => (
+					<Link to={`/drinks/${drink.idDrink}`} key={drink.idDrink}>
+						<div className='card'>
+							<div className='cardImage'>
+								<img src={drink.strDrinkThumb} alt={drink.strDrink} />
+							</div>
+							<div className='cardTitle'>
+								<h3>{drink.strDrink}</h3>
+							</div>
+						</div>
+					</Link>
+				))}
 
 				{/* I dont think this should be drinks and maybe needs to be drink types instead? and then map it to drinks on the next layer? */}
 				{/* {drinks.map(drink => {
@@ -82,8 +63,8 @@ function DrinkOptions(props) {
             //     <option value="option 5">Non-Alcoholic</option>
             // </select> */}
 			</section>
-        </div>
-		);
+		</div>
+	);
 }
 
 export default DrinkOptions;

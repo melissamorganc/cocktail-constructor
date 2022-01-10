@@ -12,11 +12,11 @@ function DrinkDetails({drinks}) {
         fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
         .then((res) => res.json())
         .then((json) => {
-            setDrink(json.drink);
+            setDrink(json);
 			console.log(json)
         })
         .catch(console.error)
-	}, []);
+	}, [drink]);
 
     if(!drink) {
         return <p>Loading drink details...</p>
