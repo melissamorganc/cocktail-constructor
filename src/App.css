@@ -10,38 +10,37 @@ header {
   padding: 100px;
 
 }
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.drinksContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(250px, 250px);
+  grid-gap: 10px;
+  margin: 10px;
+  padding: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  display: grid;
+  max-width: 250px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.cardImage {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  /* justify-content: center; */
+  max-width: 100%;
+  border: 1px solid red;
+  
+  /* width: 100%;
+  height: 100%; */
 }
-
-.App-link {
-  color: #61dafb;
+.drinkLinks {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid red;
+  font-style: italic;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.cardImage img {
+  width: 100%;
+  height: 100%;
+}

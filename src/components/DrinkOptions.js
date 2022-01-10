@@ -24,24 +24,32 @@ function DrinkOptions(props) {
     }
 
     return (
-			<section className='drinksContainer'>
-				{drinks.map((drink) => (
-					<Link to='/drinks/gin' key={drink.idDrink}>
-						<div className='card'>
-							<div className='cardImage'>
-								<img src={drink.strDrinkThumb} alt={drink.strDrink} />
-							</div>
-							<div className='cardTitle'>
-								<h3>{drink.strDrink}</h3>
-							</div>
-						</div>
-						Gin
-					</Link>
-				))}
-				<Link to='/drinks/rum'>Rum</Link>
-				<Link to='/drinks/tequila'>Tequila</Link>
-				<Link to='/drinks/vodka'>Vodka</Link>
-				<Link to='/drinks/whiskey'>Whiskey</Link>
+        <div>
+        <div className='drinkLinks'>
+            <Link to='/drinks/gin'>
+                {/* <img src= alt="" /> */}
+                Gin</Link>
+            <Link to='/drinks/rum'>Rum</Link>
+            <Link to='/drinks/tequila'>Tequila</Link>
+            <Link to='/drinks/vodka'>Vodka</Link>
+            <Link to='/drinks/whiskey'>Whiskey</Link>
+
+        </div>
+        <section className='drinksContainer'>
+            {drinks.map((drink) => (
+                <Link to={`/drinks/${drink.idDrink}`} key={drink.idDrink}>
+                    <div className='card'>
+                        <div className='cardImage'>
+                            <img src={drink.strDrinkThumb} alt={drink.strDrink} />
+                        </div>
+                        <div className='cardTitle'>
+                            <h3>{drink.strDrink}</h3>
+                        </div>
+                    </div>
+                </Link>
+            ))}
+        
+
 
 
 				{/* I dont think this should be drinks and maybe needs to be drink types instead? and then map it to drinks on the next layer? */}
@@ -68,6 +76,7 @@ function DrinkOptions(props) {
             //     <option value="option 5">Non-Alcoholic</option>
             // </select> */}
 			</section>
+        </div>
 		);
 }
 
