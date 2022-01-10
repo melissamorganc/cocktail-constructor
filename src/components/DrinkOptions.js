@@ -11,12 +11,19 @@ function DrinkOptions(props) {
 
     useEffect(() => {
         fetch(url)
-        .then((res) => res.json())
-        .then((json) => {
-            setDrinks(json.drinks)
-            console.log(json)
-        })
-        .catch(console.error)
+            .then((res) => res.json())
+			.then((json) => {
+				setDrinks(json.drinks);
+				console.log(json);
+            })
+					// .then((res) => res.text())
+					// // https://stackoverflow.com/questions/45696999/fetch-unexpected-end-of-input getting weird error message, this fixed it
+					// .then((data) => (data ? JSON.parse(data) : {}))
+					// .then((json) => {
+					//     setDrinks(json.drinks);
+					//     console.log(json);
+					// })
+            .catch(console.error);
     }, []);
 
     if (!drinks) {
@@ -25,16 +32,15 @@ function DrinkOptions(props) {
 
     return (
         <div>
-        <div className='drinkLinks'>
-            <Link to='/drinks/gin'>
-                {/* <img src= alt="" /> */}
-                Gin</Link>
-            <Link to='/drinks/rum'>Rum</Link>
-            <Link to='/drinks/tequila'>Tequila</Link>
-            <Link to='/drinks/vodka'>Vodka</Link>
-            <Link to='/drinks/whiskey'>Whiskey</Link>
-
-        </div>
+            <div className='drinkLinks'>
+                <Link to='/drinks/gin'>
+                    {/* <img src= alt="" /> */}
+                    Gin</Link>
+                <Link to='/drinks/rum'>Rum</Link>
+                <Link to='/drinks/tequila'>Tequila</Link>
+                <Link to='/drinks/vodka'>Vodka</Link>
+                <Link to='/drinks/whiskey'>Whiskey</Link>
+            </div>
         <section className='drinksContainer'>
             {drinks.map((drink) => (
                 <Link to={`/drinks/${drink.idDrink}`} key={drink.idDrink}>

@@ -1,35 +1,31 @@
+
 * {
   background-color: black;
   font-family: 'Merriweather', serif;  
   color: white;
 }
 
-header {
-  text-align: center;
-  font-size: 50px;
-  padding: 100px;
-
-}
 .drinksContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(250px, 250px);
-  grid-gap: 10px;
-  margin: 10px;
-  padding: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, 1fr);
+  grid-gap: 15px;
+  padding: 15px;
+  margin: 15px;
 }
 .card {
   border: 1px solid lightgray;
   border-radius: 1rem;
   display: grid;
   max-width: 250px;
+  justify-content: center;
+  margin: 1em;
+  /* border: 1px solid red; */
 }
 .cardImage {
   align-items: center;
   display: flex;
-  /* justify-content: center; */
-  max-width: 100%;
-  border: 1px solid red;
+  max-width: 99.5%;
   
   /* width: 100%;
   height: 100%; */
@@ -37,10 +33,24 @@ header {
 .drinkLinks {
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid red;
   font-style: italic;
 }
 .cardImage img {
-  width: 100%;
+  width: 100.5%;
   height: 100%;
+  /* border: 1px solid red; */
+  border-radius: 15px;
+
+}
+.cardTitle {
+  justify-self: center;
+  font-size: 12px;
+  overflow-wrap: normal;
+  margin: 5px;
+}
+.title {
+  text-align: center;
+  font-size: 50px;
+  padding: 100px;
+  text-decoration: none;
 }
