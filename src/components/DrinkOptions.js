@@ -27,7 +27,7 @@ function DrinkOptions(props) {
 		<div>
 			<section className='drinksContainer'>
 				{drinks.map((drink) => (
-					<Link to={`/drinks/${drink.idDrink}`} key={drink.idDrink}>
+					<Link to={`/drinks/details/${drink.idDrink}`} key={drink.idDrink}>
 						<div className='card'>
 							<div className='cardImage'>
 								<img src={drink.strDrinkThumb} alt={drink.strDrink} />
@@ -39,7 +39,6 @@ function DrinkOptions(props) {
 					</Link>
 				))}
 
-				{/* I dont think this should be drinks and maybe needs to be drink types instead? and then map it to drinks on the next layer? */}
 				{/* {drinks.map(drink => {
                 return (
                     <Link to={`browsedrinks/${drink.strIngredient1}`} key={drink.strIngredient1}>
@@ -54,14 +53,6 @@ function DrinkOptions(props) {
                     </Link>
                 )
             })} */}
-				{/* // <select name='slectList' id='selectList' className='alcoholOptions'>
-            //     <option selected value="Browse Drinks"></option>
-            //     <option value="option 1">Vodka</option>
-            //     <option value="option 2">Tequila</option>
-            //     <option value="option 3">Gin</option>
-            //     <option value="option 4">Rum</option>
-            //     <option value="option 5">Non-Alcoholic</option>
-            // </select> */}
 			</section>
 		</div>
 	);
