@@ -7,6 +7,7 @@ import DrinkDetails from './components/DrinkDetails';
 import drinksImg from './components/drinksImg.jpeg';
 
 
+
 function App() {
 	return (
 		<div className='App'>

@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+## Game Screenshots
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Home Page](./images/CocktailLiveHomepage)
+![Light Mode](./images/lightmode.png)
+![Dark Mode](./images/darkmode.png)
+![How to Play Pop Up](./images/modal.png)
 
-## Available Scripts
+## Description and Technologies
 
-In the project directory, you can run:
+A brower-based color sorting game coded in Javascript, HTML, and CSS.
+To play, select the amount of colors you would like to sort by changing the difficulty, then move the dots from tube to tube to sort them by color.
 
-### `npm start`
+## Installation Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Fork the repo and clone it down to your machine, then host on a live server!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## User Stories
 
-### `npm test`
+### MVP Goals
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- As a user, I want a browser-based interface so I can play the game.
+- As a user, I want a "how to play" button to give me instructions on how the game works.
+- As a user, I want to see a randomized colored dots appear in each container so I can see what needs to be sorted.
+- As a user, I want the colored objects to identify themselves so I can see which object I have selected.
+- As a user, I want to make sure that only the top shape in each container is movable.
+- As a user, I want to be able to move the objects from one container to another so I can organize the containers.
+- As a user, I want a new game button so I can start the round from the beginning.
 
-### `npm run build`
+### Stretch Goals
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- As a user, I want a win screen to pop up once all of the colors are sorted so that I know that I have won.
+- As a user, I want to play more than one level where I can choose the amount of colors/containers I need to sort.
+- As a user, I want to see the objects move from container to container as an added animation.
+- As a user, I want the ability to undo any move that I have made in case I made a mistake.
+- As a user, I want to be able to add additional empty containers to make the level easier.
+- As a user, I want to make the level more difficult by not being able to move similar colors on top of each other.
+- As a user, I want to see a tracker to count the number of moves I have made.
+  EXTRA EXTRA CREDIT: If the computer can calculate the least amount of moves to clear the level and compare your score to it
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Major Hurdles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- One of the biggest hurdles was figuring out how to move the correct dot within the DOM, since everything was created in Javascript and not in the HTML.
+- It took more time than anticipated to select the proper elements and I struggled to find a way to compare the dots to one another since they aren't in a standard array. Because of this,
 
-### `npm run eject`
+## Unsolved Problems
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Once I figure out how to compare the DOM elements side by side, the next three hurdles will be easier to overcome. I found a [resource](https://www.geeksforgeeks.org/how-to-check-if-an-element-has-any-children-in-javascript/) where I can check the amount of items in a parent element so I will be attempting to implement this concept to check the dot styles and quantities side by side.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Currently, there is no win state that lets the user know that they have completed the level. This will be accomplished by comparing the DOM elements within a single container, then applying this across all containers.
+- There is a minor bug where a user can stack more dots than a container allows and they will squish to fit.
+- Users can currently stack dots of different colors on top of each other. To make the game more challenging, I want to implement something to prevent this.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Wire Frames
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Wireframe Game Start](./images/Wireframe1.png)
+![Wireframe How the dots move](./images/Wireframe2.png)
+![Wireframe Game Completion](./images/Wireframe3.png)
