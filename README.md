@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+## Game Screenshots
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Home Page](./images/CocktailLiveHomepage.png)
+![Drink Search]('./images/CocktailLiveBrowse.png')
+![Drink Recipe]('./images/CocktailLiveRecipe.png)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Description and Technologies
 
-### `npm start`
+The Cocktail Constructor is a react app that allows users to search through a database of cocktails by liquor, search by liquor, then view the ingredients and recipe to make the drink.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Fork the repo and clone it down to your machine, then host on a live server!
 
-### `npm test`
+OR
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+View the live app [here](https://tender-mayer-377c2d.netlify.app/drinks/details/16333)
 
-### `npm run build`
+## User Stories
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### MVP Goals
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-As a user, I want to be able to see a list of all the cocktails I can choose from so I can select the one I want.
+-As a user, I want the ability to view a specific type of cocktail by its liquor so I can narrow down my options.
+-As a user, I want to be able to select a cocktail and see a list of ingredients as well as the recipe on how to create the drink.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Stretch Goals
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-As a user, I want to be limit those under 21 from viewing alcoholic drinks (US) and show them a list of non-alcoholic drinks instead.
+-As a user, I want to be able to view a random drink to try 
+-As a user, I want to be able to add specific ingredients to a list so I know what I need to buy to make the drink.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Major Hurdles
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- One of the biggest hurdles I ran into was with the layout of the application and which layers would attach to which component. Due to the layout of the api I needed to make these layers more specific since I did not have access to the full (paid) version of the app. 
+- Because of the first hurdle, I ran into difficulties adding the additional features I initally planned on. These will be listed below and will be actively working on them when more time permits.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Unsolved Problems
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Unsolved Error message: Currently I am receiving this error message "Warning: Can't perform a React state update on an unmounted component." I've attempted a [few fixes](https://stackoverflow.com/questions/53949393/cant-perform-a-react-state-update-on-an-unmounted-component) but kept breaking the app. Everything still renders as expected at this time.
 
-### Code Splitting
+- Favorite Drinks: I built out the the majority of the functionality for the button in one of the initial creations but ran into a problem with the route that the drinks were rendering. The main hurdle on this currently is the .map section within the list that I had previously mapped into. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Search Functionality: This was something that was not in the original markup that felt needed towards the end of the project week. I was struggling with fitting the search functionality within the structure already created (the drink details being attached to the browse drinks by liquor section and not fully on its own), but I'm confident this is something that could be easily added with a bit of extra attention.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Shopping List: As I continued building out the app this component did not seem to match the themes of the app as much. While I love the idea of it, it will probably be scratched from the final version.
 
-### Making a Progressive Web App
+## Wire Frames
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Wireframe Home]('./images/CocktailWireframeHome.png')
+![Wireframe Search]('./images/CocktailWireframeBrowse.png')
+![Wireframe Card]('./images/CocktailWireframeCard.png')

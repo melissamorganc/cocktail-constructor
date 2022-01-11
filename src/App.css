@@ -3,6 +3,7 @@
   background-color: black;
   font-family: 'Merriweather', serif;  
   color: white;
+  text-decoration: none;
 }
 
 .drinksContainer {
@@ -20,13 +21,12 @@
   max-width: 250px;
   justify-content: center;
   margin: 1em;
-  /* border: 1px solid red; */
 }
 .card :hover {
   color: gold;
 }
 .cardImage :hover {
-  border: 1px solid gold;
+  border: 1.5px solid gold;
 }
 .cardImage {
   align-items: center;
@@ -61,7 +61,7 @@
 .title {
   text-align: center;
   font-size: 50px;
-  padding: 100px;
+  padding: 75px;
   text-decoration: none;
 }
 .otherDetails img {
@@ -82,7 +82,7 @@
   grid-template-areas: 'ing ins'
   'ingl insl';
   justify-content: center;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .backBtn {
@@ -99,7 +99,7 @@ ul {
   margin-top: 0px;
 }
 li {
-  padding: 1rem;
+  padding: .25rem;
 }
 h4 {
   padding-left: 4rem;
