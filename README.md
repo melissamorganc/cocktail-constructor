@@ -15,7 +15,7 @@ Fork the repo and clone it down to your machine, then host on a live server!
 
 OR
 
-View the live app [here](https://the-cocktail-constructor.netlify.app/home)
+View the live app [here](https://the-cocktail-constructor.netlify.app/)
 
 ## User Stories
 
