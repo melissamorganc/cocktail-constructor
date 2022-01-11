@@ -1,57 +1,57 @@
 ## Game Screenshots
 
 ![Home Page](./images/CocktailLiveHomepage)
-![Light Mode](./images/lightmode.png)
-![Dark Mode](./images/darkmode.png)
-![How to Play Pop Up](./images/modal.png)
+![Drink Search]('./images/CocktailLiveBrowse.png')
+![Drink Recipe]('./images/CocktailLiveRecipe.png)
+
 
 ## Description and Technologies
 
-A brower-based color sorting game coded in Javascript, HTML, and CSS.
-To play, select the amount of colors you would like to sort by changing the difficulty, then move the dots from tube to tube to sort them by color.
+The Cocktail Constructor is a react app that allows users to search through a database of cocktails by liquor, search by liquor, then view the ingredients and recipe to make the drink.
 
 ## Installation Instructions
 
 Fork the repo and clone it down to your machine, then host on a live server!
 
+OR
+
+View the live app [here](https://tender-mayer-377c2d.netlify.app/drinks/details/16333)
+
 ## User Stories
 
 ### MVP Goals
 
-- As a user, I want a browser-based interface so I can play the game.
-- As a user, I want a "how to play" button to give me instructions on how the game works.
-- As a user, I want to see a randomized colored dots appear in each container so I can see what needs to be sorted.
-- As a user, I want the colored objects to identify themselves so I can see which object I have selected.
-- As a user, I want to make sure that only the top shape in each container is movable.
-- As a user, I want to be able to move the objects from one container to another so I can organize the containers.
-- As a user, I want a new game button so I can start the round from the beginning.
+-As a user, I want to be able to see a list of all the cocktails I can choose from so I can select the one I want.
+-As a user, I want the ability to view a specific type of cocktail by its liquor so I can narrow down my options.
+-As a user, I want to be able to select a cocktail and see a list of ingredients as well as the recipe on how to create the drink.
+
 
 ### Stretch Goals
 
-- As a user, I want a win screen to pop up once all of the colors are sorted so that I know that I have won.
-- As a user, I want to play more than one level where I can choose the amount of colors/containers I need to sort.
-- As a user, I want to see the objects move from container to container as an added animation.
-- As a user, I want the ability to undo any move that I have made in case I made a mistake.
-- As a user, I want to be able to add additional empty containers to make the level easier.
-- As a user, I want to make the level more difficult by not being able to move similar colors on top of each other.
-- As a user, I want to see a tracker to count the number of moves I have made.
-  EXTRA EXTRA CREDIT: If the computer can calculate the least amount of moves to clear the level and compare your score to it
+-As a user, I want to be limit those under 21 from viewing alcoholic drinks (US) and show them a list of non-alcoholic drinks instead.
+-As a user, I want to be able to view a random drink to try 
+-As a user, I want to be able to add specific ingredients to a list so I know what I need to buy to make the drink.
+
 
 ## Major Hurdles
 
-- One of the biggest hurdles was figuring out how to move the correct dot within the DOM, since everything was created in Javascript and not in the HTML.
-- It took more time than anticipated to select the proper elements and I struggled to find a way to compare the dots to one another since they aren't in a standard array. Because of this,
+- One of the biggest hurdles I ran into was with the layout of the application and which layers would attach to which component. Due to the layout of the api I needed to make these layers more specific since I did not have access to the full (paid) version of the app. 
+- Because of the first hurdle, I ran into difficulties adding the additional features I initally planned on. These will be listed below and will be actively working on them when more time permits.
+
 
 ## Unsolved Problems
 
-Once I figure out how to compare the DOM elements side by side, the next three hurdles will be easier to overcome. I found a [resource](https://www.geeksforgeeks.org/how-to-check-if-an-element-has-any-children-in-javascript/) where I can check the amount of items in a parent element so I will be attempting to implement this concept to check the dot styles and quantities side by side.
+- Unsolved Error message: Currently I am receiving this error message "Warning: Can't perform a React state update on an unmounted component." I've attempted a [few fixes](https://stackoverflow.com/questions/53949393/cant-perform-a-react-state-update-on-an-unmounted-component) but kept breaking the app. Everything still renders as expected at this time.
 
-- Currently, there is no win state that lets the user know that they have completed the level. This will be accomplished by comparing the DOM elements within a single container, then applying this across all containers.
-- There is a minor bug where a user can stack more dots than a container allows and they will squish to fit.
-- Users can currently stack dots of different colors on top of each other. To make the game more challenging, I want to implement something to prevent this.
+- Favorite Drinks: I built out the the majority of the functionality for the button in one of the initial creations but ran into a problem with the route that the drinks were rendering. The main hurdle on this currently is the .map section within the list that I had previously mapped into. 
+
+- Search Functionality: This was something that was not in the original markup that felt needed towards the end of the project week. I was struggling with fitting the search functionality within the structure already created (the drink details being attached to the browse drinks by liquor section and not fully on its own), but I'm confident this is something that could be easily added with a bit of extra attention.
+
+
+- Shopping List: As I continued building out the app this component did not seem to match the themes of the app as much. While I love the idea of it, it will probably be scratched from the final version.
 
 ## Wire Frames
 
-![Wireframe Game Start](./images/Wireframe1.png)
-![Wireframe How the dots move](./images/Wireframe2.png)
-![Wireframe Game Completion](./images/Wireframe3.png)
+![Wireframe Home]('./images/CocktailWireframeHome.png')
+![Wireframe Search]('./images/CocktailWireframeBrowse.png')
+![Wireframe Card]('./images/CocktailWireframeCard.png')
