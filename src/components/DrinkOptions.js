@@ -38,20 +38,6 @@ function DrinkOptions(props) {
 					</Link>
 				))}
 
-				{/* {drinks.map(drink => {
-                return (
-                    <Link to={`browsedrinks/${drink.strIngredient1}`} key={drink.strIngredient1}>
-                        <div className='card'>
-                            <div className='card-image'>
-                            <img src={drink.strDrinkThumb} alt={drink.strDrink} />
-                            </div>
-                            <div className='card-title'>
-                                <h3>{drink.strDrink}</h3>
-                            </div>
-                        </div>
-                    </Link>
-                )
-            })} */}
 			</section>
 		</div>
 	);
