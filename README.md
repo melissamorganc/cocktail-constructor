@@ -21,16 +21,16 @@ View the live app [here](https://tender-mayer-377c2d.netlify.app/drinks/details/
 
 ### MVP Goals
 
--As a user, I want to be able to see a list of all the cocktails I can choose from so I can select the one I want.
--As a user, I want the ability to view a specific type of cocktail by its liquor so I can narrow down my options.
--As a user, I want to be able to select a cocktail and see a list of ingredients as well as the recipe on how to create the drink.
+- As a user, I want to be able to see a list of all the cocktails I can choose from so I can select the one I want.
+- As a user, I want the ability to view a specific type of cocktail by its liquor so I can narrow down my options.
+- As a user, I want to be able to select a cocktail and see a list of ingredients as well as the recipe on how to create the drink.
 
 
 ### Stretch Goals
 
--As a user, I want to be limit those under 21 from viewing alcoholic drinks (US) and show them a list of non-alcoholic drinks instead.
--As a user, I want to be able to view a random drink to try 
--As a user, I want to be able to add specific ingredients to a list so I know what I need to buy to make the drink.
+- As a user, I want to be limit those under 21 from viewing alcoholic drinks (US) and show them a list of non-alcoholic drinks instead.
+- As a user, I want to be able to view a random drink to try 
+- As a user, I want to be able to add specific ingredients to a list so I know what I need to buy to make the drink.
 
 
 ## Major Hurdles
