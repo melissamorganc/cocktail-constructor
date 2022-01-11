@@ -1,6 +1,6 @@
 ## Game Screenshots
 
-![Home Page](./images/CocktailLiveHomepage)
+![Home Page](./images/CocktailLiveHomepage.png)
 ![Drink Search]('./images/CocktailLiveBrowse.png')
 ![Drink Recipe]('./images/CocktailLiveRecipe.png)
 
