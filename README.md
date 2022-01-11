@@ -15,7 +15,7 @@ Fork the repo and clone it down to your machine, then host on a live server!
 
 OR
 
-View the live app [here](https://tender-mayer-377c2d.netlify.app/drinks/details/16333)
+View the live app [here](https://tender-mayer-377c2d.netlify.app/)
 
 ## User Stories
 
