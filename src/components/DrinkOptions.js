@@ -14,7 +14,6 @@ function DrinkOptions(props) {
 			.then((res) => res.json())
 			.then((json) => {
 				setDrinks(json.drinks);
-				console.log(json);
 			})
 			.catch(console.error);
 	}, [drinks]);
