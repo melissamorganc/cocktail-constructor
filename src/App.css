@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  background-color: black;
+  font-family: 'Merriweather', serif;  
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.drinksContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, 1fr);
+  grid-gap: 15px;
+  padding: 15px;
+  margin: 15px;
+}
+.card {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: grid;
+  max-width: 250px;
+  justify-content: center;
+  margin: 1em;
+  /* border: 1px solid red; */
+}
+.card :hover {
+  color: gold;
+}
+.cardImage :hover {
+  border: 1px solid gold;
+}
+.cardImage {
+  align-items: center;
+  display: flex;
+  max-width: 99.5%;
+}
+.drinkLinks {
+  display: flex;
+  justify-content: space-evenly;
+  font-style: italic;
+  font-size: larger;
+}
+.drinkLinks :hover {
+  font-weight: bold;
+  color: gold;
+}
+.cardImage img {
+  width: 100.5%;
+  height: 100%;
+  border-radius: 5px;
+
+}
+.cardTitle {
+  justify-self: center;
+  font-size: 12px;
+  overflow-wrap: normal;
+  margin: 5px;
+}
+.cardTitle :hover {
+  font-size: 15px;
+}
+.title {
+  text-align: center;
+  font-size: 50px;
+  padding: 100px;
+  text-decoration: none;
+}
+.otherDetails img {
+  width: 250px;
+  margin: 1rem;
+  border-radius: 5px;
+}
+.otherDetails {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: .5rem;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.textDetails {
+  display: grid;
+  grid-template-areas: 'ing ins'
+  'ingl insl';
+  justify-content: center;
+  margin: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.backBtn {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  float: left;
+}
+.addBtn {
+  float: right;
+}
+ul {
+  padding-left: 5rem;
+  margin-top: 0px;
+}
+li {
+  padding: 1rem;
+}
+h4 {
+  padding-left: 4rem;
+  font-weight: lighter;
+}
+.homeImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }

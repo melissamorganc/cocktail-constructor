@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import { Routes, Route, Link } from 'react-router-dom'
 import './App.css';
+import Navigation from './components/Navigation';
+import BrowseDrinks from './components/BrowseDrinks';
+import DrinkOptions from './components/DrinkOptions';
+import DrinkDetails from './components/DrinkDetails';
+import drinksImg from './components/drinksImg.jpeg';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<header className='title'>
+				<Link to='/home'>The Cocktail Constructor</Link>
+			</header>
+			<Navigation />
+			<main>
+				<Routes>
+					<Route path='/drinks/:strIngredient1' element={<BrowseDrinks />} />
+					<Route />
+					<Route path='/home' element={<DrinkOptions />}></Route>
+					<Route path='/home' element={<Navigation />}></Route>
+					<Route
+						path='/drinks/details/:idDrink'
+						element={<DrinkDetails />}></Route>
+				</Routes>
+			</main>
+			<div className='homeImg'>
+				<img src={drinksImg} alt='drinks' />
+			</div>
+		</div>
+	);
 }
 
 export default App;
