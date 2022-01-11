@@ -1,8 +1,8 @@
 ## Game Screenshots
 
 ![Home Page](./images/CocktailLiveHomepage.png)
-![Drink Search]('./images/CocktailLiveBrowse.png')
-![Drink Recipe]('./images/CocktailLiveRecipe.png)
+![Drink Search](./images/CocktailLiveBrowse.png)
+![Drink Recipe](./images/CocktailLiveRecipe.png)
 
 
 ## Description and Technologies
@@ -52,6 +52,6 @@ View the live app [here](https://tender-mayer-377c2d.netlify.app/drinks/details/
 
 ## Wire Frames
 
-![Wireframe Home]('./images/CocktailWireframeHome.png')
-![Wireframe Search]('./images/CocktailWireframeBrowse.png')
-![Wireframe Card]('./images/CocktailWireframeCard.png')
+![Wireframe Home](./images/CocktailWireframeHome.png)
+![Wireframe Search](./images/CocktailWireframeBrowse.png)
+![Wireframe Card](./images/CocktailWireframeCard.png)
