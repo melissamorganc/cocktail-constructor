@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import DrinkDetails from './DrinkDetails';
 import DrinkOptions from './DrinkOptions';
 
+
 function BrowseDrinks(props) {
     
     const {strIngredient1} = useParams();
@@ -18,12 +19,10 @@ function BrowseDrinks(props) {
     }
 
     return (
-        <div>
-            <DrinkOptions />
-
-            
-        </div>
-    );
+			<div>
+				<DrinkOptions />
+			</div>
+		);
 }
 
 export default BrowseDrinks;

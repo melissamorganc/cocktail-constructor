@@ -15,31 +15,38 @@
 }
 .card {
   border: 1px solid lightgray;
-  border-radius: 2px;
+  border-radius: 5px;
   display: grid;
   max-width: 250px;
   justify-content: center;
   margin: 1em;
   /* border: 1px solid red; */
 }
+.card :hover {
+  color: gold;
+}
+.cardImage :hover {
+  border: 1px solid gold;
+}
 .cardImage {
   align-items: center;
   display: flex;
   max-width: 99.5%;
-  
-  /* width: 100%;
-  height: 100%; */
 }
 .drinkLinks {
   display: flex;
   justify-content: space-evenly;
   font-style: italic;
+  font-size: larger;
+}
+.drinkLinks :hover {
+  font-weight: bold;
+  color: gold;
 }
 .cardImage img {
   width: 100.5%;
   height: 100%;
-  /* border: 1px solid red; */
-  border-radius: 2px;
+  border-radius: 5px;
 
 }
 .cardTitle {
@@ -47,6 +54,9 @@
   font-size: 12px;
   overflow-wrap: normal;
   margin: 5px;
+}
+.cardTitle :hover {
+  font-size: 15px;
 }
 .title {
   text-align: center;
@@ -94,4 +104,9 @@ li {
 h4 {
   padding-left: 4rem;
   font-weight: lighter;
+}
+.homeImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }

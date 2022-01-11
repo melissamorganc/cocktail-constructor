@@ -1,6 +1,4 @@
 import React from 'react';
-import "./Navigation.module.css";
-import styles from "./Navigation.module.css"
 import BrowseDrinks from './BrowseDrinks';
 import { Link } from 'react-router-dom';
 

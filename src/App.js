@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import BrowseDrinks from './components/BrowseDrinks';
 import DrinkOptions from './components/DrinkOptions';
 import DrinkDetails from './components/DrinkDetails';
+import drinksImg from './components/drinksImg.jpeg';
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
 						element={<DrinkDetails />}></Route>
 				</Routes>
 			</main>
+			<div className='homeImg'>
+				<img src={drinksImg} alt='drinks' />
+			</div>
 		</div>
 	);
 }

@@ -26,7 +26,7 @@ function DrinkOptions(props) {
 		<div>
 			<section className='drinksContainer'>
 				{drinks.map((drink) => (
-					<Link to={`/drinks/details/${drink.idDrink}`} key={drink.idDrink}>
+                    <Link to={`/drinks/details/${drink.idDrink}`} key={drink.idDrink}>
 						<div className='card'>
 							<div className='cardImage'>
 								<img src={drink.strDrinkThumb} alt={drink.strDrink} />
