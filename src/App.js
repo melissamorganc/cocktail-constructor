@@ -12,15 +12,14 @@ function App() {
 	return (
 		<div className='App'>
 			<header className='title'>
-				<Link to='/home'>The Cocktail Constructor</Link>
+				<Link to='/'>The Cocktail Constructor</Link>
 			</header>
 			<Navigation />
 			<main>
 				<Routes>
 					<Route path='/drinks/:strIngredient1' element={<BrowseDrinks />} />
-					<Route />
-					<Route path='/home' element={<DrinkOptions />}></Route>
-					<Route path='/home' element={<Navigation />}></Route>
+					<Route path='/' element={<DrinkOptions />}></Route>
+					<Route path='/' element={<Navigation />}></Route>
 					<Route
 						path='/drinks/details/:idDrink'
 						element={<DrinkDetails />}></Route>

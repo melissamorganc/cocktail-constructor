@@ -9,7 +9,6 @@ function DrinkOptions(props) {
 	const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${strIngredient1}`;
 
 	useEffect(() => {
-		// debugger;
 		fetch(url)
 			.then((res) => res.json())
 			.then((json) => {
@@ -26,7 +25,7 @@ function DrinkOptions(props) {
 		<div>
 			<section className='drinksContainer'>
 				{drinks.map((drink) => (
-                    <Link to={`/drinks/details/${drink.idDrink}`} key={drink.idDrink}>
+					<Link to={`/drinks/details/${drink.idDrink}`} key={drink.idDrink}>
 						<div className='card'>
 							<div className='cardImage'>
 								<img src={drink.strDrinkThumb} alt={drink.strDrink} />
@@ -37,7 +36,6 @@ function DrinkOptions(props) {
 						</div>
 					</Link>
 				))}
-
 			</section>
 		</div>
 	);
