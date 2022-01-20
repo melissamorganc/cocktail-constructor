@@ -25,8 +25,8 @@ function App() {
 						element={<DrinkDetails />}></Route>
 				</Routes>
 			</main>
-			<div className='homeImg'>
-				<img src={drinksImg} alt='drinks' />
+			<div>
+				<img src={drinksImg} alt='drinks' className='homeImg' />
 			</div>
 		</div>
 	);
