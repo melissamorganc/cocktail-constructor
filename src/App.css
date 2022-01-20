@@ -36,6 +36,7 @@
 .drinkLinks {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   font-style: italic;
   font-size: larger;
 }
@@ -60,8 +61,8 @@
 }
 .title {
   text-align: center;
-  font-size: 50px;
-  padding: 75px;
+  font-size: 40px;
+  padding: 65px;
   text-decoration: none;
 }
 .otherDetails img {
@@ -105,8 +106,14 @@ h4 {
   padding-left: 4rem;
   font-weight: lighter;
 }
+a {
+  padding: 12px;
+}
 .homeImg {
-  display: flex;
-  justify-content: center;
-  margin-top: 175px;
+  display: block;
+  margin-top: auto;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
