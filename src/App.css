@@ -38,7 +38,7 @@
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	font-style: italic;
-	font-size: larger;
+	font-size: 20px;
 }
 .drinkLinks :hover {
 	font-weight: bold;
@@ -146,4 +146,5 @@ a {
 	cursor: pointer;
 	padding: 1%;
 	font-style: italic;
+	font-size: 15px;
 }
