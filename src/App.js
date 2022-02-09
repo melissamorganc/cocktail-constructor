@@ -10,7 +10,7 @@ import drinksImg from './components/drinksImg.jpeg';
 
 function App() {
 	return (
-		<div className='App'>
+		<div className='home'>
 			<header className='title'>
 				<Link to='/'>The Cocktail Constructor</Link>
 			</header>
@@ -25,7 +25,7 @@ function App() {
 						element={<DrinkDetails />}></Route>
 				</Routes>
 			</main>
-			<div>
+			<div className='homeImgDiv'>
 				<img src={drinksImg} alt='drinks' className='homeImg' />
 			</div>
 		</div>
