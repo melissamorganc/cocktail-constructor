@@ -144,4 +144,6 @@ a {
 	display: flex;
 	justify-content: center;
 	cursor: pointer;
+	padding: 1%;
+	font-style: italic;
 }
